@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const connectDB = require('./config/db');
-const foodRoutes = require('./routes/food_routes');
+const foodRoutes = require('./api/food_routes');
 require('dotenv').config();
 
 const app = express();

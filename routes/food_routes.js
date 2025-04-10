@@ -57,5 +57,12 @@ router.post('/', async (req, res) => {
     res.status(400).json({ message: error.message });
   }
 });
+router.get('/ping', async (req, res) => {
+  try {
 
+    res.json({"message":"i am active:)"});
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
 module.exports = router;
